@@ -63,8 +63,8 @@ body {
 
 .weather-details {
     font-size: 16px;
-    line-height: 20px;
-    color: #00000070;
+    line-height: 25px;
+    color: #00000069;
 }
 
 .weather-details strong {
@@ -101,11 +101,11 @@ main {
 }
 
 footer {
-    border-top: 1px solid #a7a7a777;
+    border-top: 1px solid #a7a7a728;
     padding-top: 20px;
     text-align: center;
     font-size: 13px;
-    color: #000000ad;
+    color: #0000006e;
 }
 
 a {
