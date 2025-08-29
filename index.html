@@ -12,23 +12,23 @@
 <body>
     <div class="weather-app">
         <header>
-            <form>
-                <input type="search" placeholder="Enter a city..." required>
-                <input type="submit" value="search">
+            <form class="search-form">
+                <input type="search" placeholder="Enter a city..." required class="search-form-input">
+                <input type="submit" value="Search" class="search-form-button">
             </form>
         </header>
         <main class="weather-info">
             <div>
-                <h1>Paris</h1>  
-                <p>Tuesday 14:40, scattered clouds
+                <h1 class="city">Paris</h1>  
+                <p class="weather-details"><span>Tuesday 14:40</span>, <span>scattered clouds</span>
                     <br>
-                    humidity: 66%, Wind: 3.13km/h
+                    Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
                 </p>
             </div>
-            <div>
-                <div>🌥️ 12°C</div>
+            <div class="weather-wrapper">
+                <span class="weather-icon">🌥️</span><span class="weather-current-temperature">12</span><span class="unit">°C</span>
             </div>
-        </main>
+            </main>
         <footer>This project was coded by 
             <a href="https://github.com/DomeC99" target="_blank">Doménica Criollo</a>, is open-sourced 
             <a href="https://github.com/DomeC99/my-meteo.git" target="_blank">on GitHub</a> and hosted 
