@@ -4,6 +4,13 @@ function updateData (response){ //13. Shows JASON or OBJECT with info. Function 
     temperature.innerHTML = Math.round(response.data.temperature.current); //15. change with info on API and ROUND it
     let newCity = document.querySelector(".city"); //6. select the info I want to change (16)
     newCity.innerHTML = response.data.city;//7. replaces with API info (17)
+    let newDescription = document.querySelector("#description");
+    newDescription.innerHTML = response.data.condition.description;
+    let newHumidity = document.querySelector("#humidity");
+    newHumidity.innerHTML = response.data.temperature.humidity;
+    let newWind = document.querySelector("#wind");
+    newWind.innerHTML = response.data.wind.speed;
+
 }
 function searchCityApi (city){//8. Function (2) for intertwining the value with the API cities *city is new name for paramenter inputCity.value
     let apiKey = "28fac95a24b3ba61410a05dt43ob3b30"; //10. define KEY
