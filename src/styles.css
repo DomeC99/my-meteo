@@ -68,7 +68,7 @@ body {
 }
 
 .weather-details strong {
-    color: rgb(209, 119, 182);
+    color: #f65282;
 }
 
 .weather-wrapper {
@@ -89,6 +89,38 @@ body {
     font-weight: 600;
     font-size: 20px;
     padding-top: 10px;
+}
+
+.forecast-items {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.forecast-day {
+    text-align: center;
+    color: #00000046;
+    margin-bottom: 15px;
+}
+
+.forecast-icon {
+    font-size: 30px;
+    text-align: center;
+}
+
+.forecast-temperature {
+    color: #f65282; 
+    margin-top: 15px;
+}
+
+.forecast-temp-bold {
+    text-align: center;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.forecast-temp {
+    margin: 0 5px;
 }
 
 header {
