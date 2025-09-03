@@ -46,7 +46,26 @@ function showCity (event){ //3. define function (1). Sends city input for the AP
     //newCity.innerHTML = inputCity.value;//7. replaces the title with the input *IT CHANGES IDENTICALLY AS THE INPUT - qUITo
     searchCityApi(inputCity.value); //9. the value is called by a new function that uses the API *inputCity.value is redefined in the searchCityApi function parameter
 }
+
+function showForecast(){ //FORE 2. this function prevents us from repeating 5 times in HTML
+    let days = ["Mon", "Tue", "Wed", "Thu", "Fri"]; //FORE 3. array with days for the loop
+    let foreHtml = ""; //FORE 4. HTML empty first
+
+    days.forEach(function(day) { //FORE 5. loop repeats for each day, and insert in DAY 
+       foreHtml = foreHtml+ //FORE 6. empty HTML now added string and day
+        `<div class="forecast-info">
+            <div class="forecast-day">${day}</div>
+            <div class="forecast-icon">🌥️</div>
+            <div class="forecast-temperature"><span class="forecast-temp-bold">19°</span> <span class="forecast-temp">10°</span></div>
+        </div>`;
+    }); 
+    newForecast.innerHTML = foreHtml //FORE 8. Add HTML in my selected DIV
+}
+    
+let newForecast = document.querySelector("#forecast-section"); //FORE 7. select the section ID where I want my func
+    
 let searchCity = document.querySelector("#search-city"); //1. Select the form, and submit button
 searchCity.addEventListener("submit", showCity) //2. name of function (1)
 
 searchCityApi("Quito"); //18. searches by default a city. Function 2
+showForecast(); //FORE 1. call the func
